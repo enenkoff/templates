@@ -40,7 +40,7 @@ var path = {
     src: {
         common: 'dev/src/',                                 /* path to source folder */
         svg: 'dev/src/svg/',                                /* path to source svg folder */
-        media: 'dev/src/media/',                            /* path to source media folder */
+        media: 'dev/src/media/**/*.*',                      /* path to source media files */
         fonts: 'dev/src/fonts/',                            /* path to source fonts folder */
         js: 'dev/src/js/',                                  /* path to source js folder */
         html_templates: 'dev/src/_code/templates/',         /* path to source html all files */
