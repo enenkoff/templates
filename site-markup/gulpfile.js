@@ -173,9 +173,9 @@ gulp.task('builder:css', function () {
 /* watch changes */
 
 gulp.task('watch', ['svg', 'builder:css', 'builder:html', 'builder:js', 'browser-sync'], function () {
-    gulp.watch(path.src.sass,['builder:css']);
-    gulp.watch(path.src.html_all, ['builder:html']);
-    gulp.watch(path.src.js + '**/*.js', ['builder:js']);
+    gulp.watch(path.watch.style,['builder:css']);
+    gulp.watch(path.watch.html, ['builder:html']);
+    gulp.watch(path.watch.js + '**/*.js', ['builder:js']);
 });
 
 /* dafault tasks */
