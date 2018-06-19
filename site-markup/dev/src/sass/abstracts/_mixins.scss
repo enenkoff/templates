@@ -19,4 +19,10 @@
 @mixin breakpoints($from,$to){
   @media screen and (min-width:$from+'px') and (max-width:$to+'px'){@content;}
 }
-
+@mixin hover(){
+  @include media(hover,1025){
+    &:hover {
+      @content;
+    }
+  }
+}

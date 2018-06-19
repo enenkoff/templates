@@ -9,7 +9,7 @@ npm install css-mqpacker
 npm i -g bower
 npm i -g preen
 
-bower install       install bower packages
+bower install <pk>  install bower packages(pk) -> look in bower.json
 preen               remove unneeded plugin's files
 
 /*--- one-use commands ---*/
