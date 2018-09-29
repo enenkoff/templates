@@ -180,7 +180,7 @@ gulp.task('builder:css', function () {
 gulp.task('watch', ['svg', 'builder:css', 'builder:html', 'builder:js', 'browser-sync'], function () {
     gulp.watch(path.watch.style,['builder:css']);
     gulp.watch(path.watch.html, ['builder:html']);
-    gulp.watch(path.watch.js', ['builder:js']);
+    gulp.watch(path.watch.js, ['builder:js']);
 });
 
 /* dafault tasks */
