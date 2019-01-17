@@ -4,6 +4,15 @@ $(document).ready(function () {
 
     $header = $('#header');
 
+    /* ------------------------------- get window values ------------------------------- */
+
+    scrollTop = $(window).scrollTop();
+    function getWindowSizes() {
+        winWidth = $(window).width();
+        winHeight = $(window).height();
+    }
+
+
     /* ----------------------------------- functions ----------------------------------- */
 
 
@@ -33,7 +42,9 @@ $(document).ready(function () {
     /* --------------------------------- document load --------------------------------- */
 
     documentClick();
+    getWindowSizes();
     project.headerFixed();
+
 
     if($('[data-owl="blog"]').length > 0){
         project.carousel();
@@ -42,12 +53,13 @@ $(document).ready(function () {
     /* --------------------------------- document resize --------------------------------- */
 
     $(window).resize(function () {
-
+        getWindowSizes();
     });
 
     /* --------------------------------- document scroll --------------------------------- */
 
     $(window).scroll(function (e) {
+        scrollTop = $(window).scrollTop();
         project.headerFixed();
     });
 

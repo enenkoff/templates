@@ -1,6 +1,7 @@
 var project = {},
     scrollTop,
     winWidth,
+    winHeight,
     $html,
     $header;
 
@@ -11,7 +12,7 @@ var project = {},
     */
 
 project.headerFixed = function(){
-    scrollTop = $(window).scrollTop();
+
     if(scrollTop > scrollVar){
         $header.addClass('minimized');
         scrollVar = scrollTop;
