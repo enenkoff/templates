@@ -29,6 +29,7 @@ module.exports = {
         js_no_app: '!src/js/*.js' /* path for exclude app js file */,
         style: 'src/sass/**/*.scss' /* path for watch sass files */,
         svg: 'src/svg/**/*.svg' /* path for watch svg files */,
+        svg_no_sprite: '!src/svg/**/sprite.svg' /* path for exclude sprite-svg */,
         img: 'src/images/**/*.+(jpg|jpeg|png|gif)' /* path for watch image files */,
     },
     clean: 'dev/' /* path for browsersync directory */,

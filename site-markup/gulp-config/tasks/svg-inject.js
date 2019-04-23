@@ -4,5 +4,6 @@ module.exports = function (gulp, plugins, path_src, path_dest) {
                .pipe(plugins.injectSvg({
                    base: path_src
                }))
-               .pipe(gulp.dest(path_dest));
+               .pipe(gulp.dest(path_dest))
+               .pipe(browserSync.reload({ stream: true }));
 };
