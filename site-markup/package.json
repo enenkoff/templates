@@ -1,36 +1,68 @@
 {
-  "name": "ARPLANS",
+  "name": "Project Name",
   "version": "1.0.0",
   "description": "gulp package",
   "main": "gulpfile.js",
   "scripts": {
+    "lint": "eslint --debug src/js/app-lnt.js",
+    "lint:write": "eslint --debug src/js/app-lnt.js --fix",
+    "prettier": "prettier --write src/js/modules/*.js --write src/js/partials/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.(js)": [
+      "yarn prettier",
+      "git add"
+    ]
   },
   "author": "enenkoff",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^7.1.5",
-    "browser-sync": "^2.18.12",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.9.3",
+    "autoprefixer": "^9.5.1",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.26.3",
+    "css-mqpacker": "^7.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "gulp": "^4.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.0.0",
     "gulp-html-tag-include": "^1.0.1",
-    "gulp-imagemin": "^3.3.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^5.0.3",
     "gulp-inject-svg": "^0.1.18",
-    "gulp-newer": "^1.3.0",
-    "gulp-notify": "^3.0.0",
-    "gulp-postcss": "^7.0.0",
-    "gulp-rename": "^1.2.3",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
     "gulp-rigger": "^0.5.8",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^1.12.1",
-    "gulp-stylefmt": "^1.1.0",
-    "gulp-svgstore": "^6.1.0",
-    "gulp-uglify": "^3.0.0",
-    "gulp-uglifyjs": "^0.6.2"
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "gulp-webp": "^4.0.1",
+    "husky": "^1.1.2",
+    "lint-staged": "^7.3.0",
+    "prettier": "^1.17.0",
+    "webpack": "^4.30.0",
+    "webpack-stream": "^5.2.1"
   },
   "dependencies": {
-    "bower": "^1.8.4",
-    "css-mqpacker": "^6.0.1",
-    "stylefmt": "^6.0.0"
+    "jquery": "^3.4.0",
+    "stylefmt": "^6.0.3"
   }
 }

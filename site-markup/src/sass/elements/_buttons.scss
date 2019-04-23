@@ -1,0 +1,37 @@
+.btn {
+  border: none;
+  border-radius: 0;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  transition: all 0.18s;
+  &--red {
+    color: $white;
+    background-color: $btn-red;
+    &:hover {
+      background-color: $btn-red-hover;
+    }
+  }
+  &--blue {
+    color: $white;
+    background-color: $btn-blue;
+    &:hover {
+      background-color: $btn-blue-hover;
+    }
+  }
+  &--sm {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 40px;
+  }
+  &--md {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 24px 40px;
+  }
+  &--full {
+    width: 100%;
+  }
+
+
+}

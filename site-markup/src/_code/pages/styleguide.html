@@ -1,0 +1,196 @@
+<include src="../templates/head.html" title="Style Guide"></include>
+
+    <div class="container">
+
+        <include src="../templates/header.html"></include>
+
+        <div id="main" class="main">
+            <style>
+                .sct {
+                    margin-bottom: 10px;
+                }
+                .sct2 {
+                    margin-bottom: 30px;
+                }
+                .list-no-bullets {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .swatch {
+                    width: 23%;
+                    margin-right: 2%;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 10px;
+                }
+                .swatch-preview {
+                    border-top: 1px solid rgba(0, 0, 0, 0.1);
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                    display: block;
+                    height: 60px;
+                    width: 100%;
+                }
+                .swatch-details {
+                    display: flex;
+                    flex-direction: column;
+                }
+                xmp {
+                    background-color: #edf1f6;
+                    padding: 0 20px;
+                }
+            </style>
+            <div style="width: 980px; margin: 50px auto;">
+                <h1 class="sct">COLORS</h1>
+                <ul class="sct2 list-no-bullets">
+                    <li class="swatch">
+                        <span class="swatch-preview" style="background-color: #002b4f;"></span>
+                        <ul class="list-no-bullets swatch-details">
+                            <li><strong>Текст</strong></li>
+                            <li>#002b4f</li>
+                            <li><strong style="color: #002b4f">$text</strong></li>
+                        </ul>
+                    </li>
+                    <li class="swatch">
+                        <span class="swatch-preview" style="background-color: #009ca2;"></span>
+                        <ul class="list-no-bullets swatch-details">
+                            <li><strong>Ссылки</strong></li>
+                            <li>#009ca2</li>
+                            <li><strong style="color: #009ca2">$link</strong></li>
+                        </ul>
+                    </li>
+                    <li class="swatch">
+                        <span class="swatch-preview" style="background-color: #edf1f6;"></span>
+                        <ul class="list-no-bullets swatch-details">
+                            <li><strong>Фон</strong></li>
+                            <li>#edf1f6</li>
+                            <li><strong style="color: #edf1f6">$bg</strong></li>
+                        </ul>
+                    </li>
+                    <li class="swatch">
+                        <span class="swatch-preview" style="background-color: #bdbdbd;"></span>
+                        <ul class="list-no-bullets swatch-details">
+                            <li><strong>Иконка</strong></li>
+                            <li>#bdbdbd</li>
+                            <li><strong style="color: #bdbdbd">$icon</strong></li>
+                        </ul>
+                    </li>
+                    <li class="swatch">
+                        <span class="swatch-preview" style="background-color: #1976d2;"></span>
+                        <ul class="list-no-bullets swatch-details">
+                            <li><strong>Кнопка синяя</strong></li>
+                            <li>#1976d2</li>
+                            <li><strong style="color: #1976d2">$btn_blue</strong></li>
+                        </ul>
+                    </li>
+                    <li class="swatch">
+                        <span class="swatch-preview" style="background-color: #0f6bc5;"></span>
+                        <ul class="list-no-bullets swatch-details">
+                            <li><strong>Кнопка синяя ховер</strong></li>
+                            <li>#0f6bc5</li>
+                            <li><strong style="color: #0f6bc5">$btn_blue_hover</strong></li>
+                        </ul>
+                    </li>
+                    <li class="swatch">
+                        <span class="swatch-preview" style="background-color: #a40843;"></span>
+                        <ul class="list-no-bullets swatch-details">
+                            <li><strong>Кнопка красная</strong></li>
+                            <li>#a40843</li>
+                            <li><strong style="color: #a40843">$btn_red</strong></li>
+                        </ul>
+                    </li>
+                    <li class="swatch">
+                        <span class="swatch-preview" style="background-color: #860435;"></span>
+                        <ul class="list-no-bullets swatch-details">
+                            <li><strong>Кнопка красная ховер</strong></li>
+                            <li>#860435</li>
+                            <li><strong style="color: #860435">$btn_red_hover</strong></li>
+                        </ul>
+                    </li>
+                    <li class="swatch">
+                        <span class="swatch-preview" style="background-color: #2e6db6;"></span>
+                        <ul class="list-no-bullets swatch-details">
+                            <li><strong>Градиент начало</strong></li>
+                            <li>#2e6db6</li>
+                            <li><strong style="color: #2e6db6">$grad_begin</strong></li>
+                        </ul>
+                    </li>
+                    <li class="swatch">
+                        <span class="swatch-preview" style="background-color: #5bc48c;"></span>
+                        <ul class="list-no-bullets swatch-details">
+                            <li><strong>Градиент конец</strong></li>
+                            <li>#5bc48c</li>
+                            <li><strong style="color: #5bc48c">$grad_end</strong></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <h1 class="sct">HEADINGS</h1>
+                <div style="display: flex; align-items: baseline">
+                    <div class="title title--lg">Заголовок</div>
+                    &nbsp;&nbsp;&nbsp;(.title .title--lg)
+                </div>
+                <div style="display: flex; align-items: baseline">
+                    <div class="title title--md">Заголовок</div>
+                    &nbsp;&nbsp;&nbsp;(.title .title--md)
+                </div>
+                <div style="display: flex; align-items: baseline">
+                    <div class="title title--sm">Заголовок</div>
+                    &nbsp;&nbsp;&nbsp;(.title .title--sm)
+                </div>
+                <div class="sct2" style="display: flex; align-items: baseline">
+                    <div class="title title--xs">Заголовок</div>
+                    &nbsp;&nbsp;&nbsp;(.title .title--xs)
+                </div>
+                <h1 class="sct">BUTTONS</h1>
+                <div class="sct" style="display: flex; align-items: baseline">
+                    <button class="btn btn--sm btn--blue">Кнопка</button>
+                    &nbsp;&nbsp;&nbsp;(.btn .btn--sm .btn--blue)
+                </div>
+                <div class="sct" style="display: flex; align-items: baseline">
+                    <button class="btn btn--sm btn--red">Кнопка</button>
+                    &nbsp;&nbsp;&nbsp;(.btn .btn--sm .btn--red)
+                </div>
+                <div class="sct" >
+                    <div class="sct" >
+                        <button class="btn btn--sm btn--full btn--red">Кнопка</button>
+                    </div>
+                    (.btn .btn--sm .btn--full .btn--red)
+                </div>
+                <div class="sct2" >
+                    <div class="sct" >
+                        <button class="btn btn--md btn--full btn--red">Кнопка</button>
+                    </div>
+                    (.btn .btn--md .btn--full .btn--red)
+                </div>
+                <h1 class="sct">MEDIA</h1>
+                <xmp class="sct">
+<picture>
+    <source type="image/webp" srcset="assets/images/test-image.webp">
+    <source type="image/jpeg" srcset="assets/images/test-image.jpg">
+    <img src="assets/images/test-image.jpg" alt="Тестовая картинка" width="600">
+</picture>
+                </xmp>
+                <picture width="600">
+                    <source type="image/webp" srcset="assets/images/test-image.webp">
+                    <source type="image/jpeg" srcset="assets/images/test-image.jpg">
+                    <img src="assets/images/test-image.jpg" alt="Тестовая картинка" width="600">
+                </picture>
+
+            </div>
+
+        </div>
+
+        <include src="../templates/footer.html"></include>
+
+    </div>
+
+</div>
+
+<include src="../templates/scripts.html"></include>
+
+<!--script-->
+
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+.title {
+  font-weight: 500;
+  &--lg {
+    font-size: 32px;
+  }
+  &--md {
+    font-size: 28px;
+  }
+  &--sm {
+    font-size: 22px;
+  }
+  &--xs {
+    font-size: 18px;
+  }
+}
