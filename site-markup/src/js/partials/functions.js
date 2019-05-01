@@ -1,3 +1,3 @@
 const functions = {
-    scroll: require('./modules/scroll'),
+    burger: require('./modules/burger'),
 };
