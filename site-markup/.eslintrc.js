@@ -13,25 +13,23 @@ module.exports = {
     },
     rules: {
         indent: ['error', 4],
-        'linebreak-style': 'off', // Неправильно работает в Windows.
-
-        'arrow-parens': 'off', // Несовместимо с prettier
-        'object-curly-newline': 'off', // Несовместимо с prettier
-        'no-mixed-operators': 'off', // Несовместимо с prettier
-        'arrow-body-style': 'off', // Это - не наш стиль?
-        'function-paren-newline': 'off', // Несовместимо с prettier
+        'linebreak-style': 'off',
+        'global-require': 'off',
+        'one-var': ['error', { var:'consecutive', let:'consecutive', const:'never' }],
+        'arrow-parens': 'off',
+        'object-curly-newline': 'off',
+        'no-mixed-operators': 'off',
+        'arrow-body-style': 'off',
+        'function-paren-newline': 'off',
         'no-plusplus': 'off',
-        'space-before-function-paren': 0, // Несовместимо с prettier
-
-        'max-len': ['error', 100, 2, { ignoreUrls: true }], // airbnb позволяет некоторые пограничные случаи
-        'no-console': 'error', // airbnb использует предупреждение
-        'no-alert': 'error', // airbnb использует предупреждение
-
-        'no-param-reassign': 'off', // Это - не наш стиль?
-        radix: 'off', // parseInt, parseFloat и radix выключены. Мне это не нравится.
-
+        'space-before-function-paren': 0,
+        'max-len': ['error', 100, 2, { ignoreUrls: true }],
+        'no-console': 'error',
+        'no-alert': 'error',
+        'no-param-reassign': 'off',
+        radix: 'off',
         'prefer-destructuring': 'off',
-
         'prettier/prettier': ['error'],
     },
 };
+/* rules: https://eslint.org/docs/rules/ */

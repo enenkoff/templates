@@ -1,11 +1,4 @@
 $(document).ready(() => {
-    /* ----------------------------------- variables ----------------------------------- */
-
-    let $html = $('html'),
-        $header = $('#header'),
-        scrollTop = $(window).scrollTop(),
-        winWidth,
-        winHeight;
 
     /* ------------------------------- get window values ------------------------------- */
 
@@ -53,5 +46,5 @@ $(document).ready(() => {
 
     /* --------------------------------- document scroll --------------------------------- */
 
-    $(window).scroll(e => {});
+    $(window).scroll(() => {});
 });

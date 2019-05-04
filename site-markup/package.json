@@ -4,8 +4,8 @@
   "description": "gulp package",
   "main": "gulpfile.js",
   "scripts": {
-    "lint": "eslint --debug src/js/app-lnt.js",
-    "lint:write": "eslint --debug src/js/app-lnt.js --fix",
+    "lint": "eslint --debug src/js/app-lnt.js --debug src/js/modules/*.js",
+    "lint:write": "eslint --debug src/js/app-lnt.js --fix --debug src/js/modules/*.js --fix",
     "prettier": "prettier --write src/js/modules/*.js --write src/js/partials/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
