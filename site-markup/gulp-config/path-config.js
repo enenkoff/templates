@@ -32,6 +32,7 @@ module.exports = {
         svg_no_sprite: '!src/svg/**/sprite.svg' /* path for exclude sprite-svg */,
         img: 'src/images/**/*.+(jpg|jpeg|png|gif)' /* path for watch image files */,
     },
-    clean: 'dev/' /* path for browsersync directory */,
+    browser: 'dev/' /* path for browsersync directory */,
+    clean: 'dev/' /* path for clean files */,
     port: '6061',
 };

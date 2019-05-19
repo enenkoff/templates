@@ -6,7 +6,7 @@ module.exports = function(gulp, plugins) {
     /* browser sync ------------------------------------- */
 
     gulp.task('browser:sync', () => {
-        return getTask('browser-sync', PATH_CONFIG.clean, PATH_CONFIG.port);
+        return getTask('browser-sync', PATH_CONFIG.browser, PATH_CONFIG.port);
     });
 
     /* clean all files ------------------------------------- */
