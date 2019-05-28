@@ -2,6 +2,8 @@
   "name": "ProjectName",
   "version": "1.0.0",
   "description": "gulp package",
+  "author": "enenkoff",
+  "license": "ISC",
   "main": "gulpfile.js",
   "scripts": {
     "lint": "eslint --debug src/js/app-lnt.js --debug src/js/modules/*.js",
@@ -20,8 +22,6 @@
       "git add"
     ]
   },
-  "author": "enenkoff",
-  "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^9.5.1",
     "babel-core": "^6.26.3",
@@ -58,11 +58,11 @@
     "husky": "^1.1.2",
     "lint-staged": "^7.3.0",
     "prettier": "^1.17.0",
+    "stylefmt": "^6.0.3",
     "webpack": "^4.30.0",
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
-    "jquery": "^3.4.0",
-    "stylefmt": "^6.0.3"
+    "jquery": "^3.4.0"
   }
 }
